@@ -1,0 +1,15 @@
+.footer__wrap {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-bottom: 1 solid #f0ebff;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 10px;
+  }
+}

@@ -1,0 +1,220 @@
+.footer {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 47px 20px 40px;
+    gap: 20px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 40px 30px;
+    padding: 40px;
+  }
+}
+
+.footer__social {
+  display: flex;
+  align-items: center;
+  padding: 22px 20px;
+  border-bottom: 1 solid #f0ebff;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+    padding: 0;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+}
+
+.footer__social-link-logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  margin-right: auto;
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.footer__social-description {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    flex-basis: 100%;
+    margin: 0 0 50px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.footer__social-name {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 800;
+  color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.footer__social-name-desktop {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: $basic-black;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 700;
+  }
+}
+
+.footer__social-link {
+  margin-right: 20px;
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-right: 14px;
+    padding: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.footer__social-title {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: inherit;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 0;
+}
+
+.footer__social-title--vk {
+  background-image: url("/images/VK.svg");
+  width: 20px;
+  height: 20px;
+}
+
+.footer__social-title--pinterest {
+  background-image: url("/images/pinterest.svg");
+  width: 22px;
+  height: 22px;
+}
+
+.footer__social-title--ok {
+  background-image: url("/images/ok.svg");
+  width: 20px;
+  height: 20px;
+}
+
+.footer__shop-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__shop-item {
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.footer__contacts-address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0 0 16px;
+  padding-left: 19px;
+  background-image: url("/images/Address.svg");
+  background-repeat: no-repeat;
+  background-position: left 3px;
+  background-size: 13px 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.footer__contacts-telephone {
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding-left: 19px;
+  background-image: url("/images/Phone.svg");
+  background-repeat: no-repeat;
+  background-position: left 3px;
+  background-size: 13px 16px;
+}
+
+.footer__development {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 57px 30px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / -1;
+    padding: 36px 0 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    padding: 20px 0 0;
+  }
+}
+
+.footer__development-text {
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 16px;
+  color: #bdbdbd;
+}
+
+.footer__development-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer__development-logo {
+  vertical-align: middle;
+}
